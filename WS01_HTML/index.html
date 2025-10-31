@@ -1,14 +1,112 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS01_HTML</title>
+    <title>minun "ensimmäinen" verkkosivuni</title>
 </head>
 
 <body>
-    <h1>WS01_HTML</h1>
+    <h1>Teretulloo</h1>
+    <p>Tämä on peruna.</p>
+    <img src="https://lh6.googleusercontent.com/proxy/IrEfZGRvlh8JjFfij6mkmoYH1yCqoHnkzB92JGuuOQoeycTQtmt8O8QtojLRJgo5gv5DJpOnvEQo1NiK_5meEKOW4IBJik8jnuEGD9VUWkn0elVBtW-1XIhcKgpbYQ"
+        alt="Description of image">
+    <h2 class="card">Ordered List</h2>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">klikkaa jos
+        uskallat</a>
 </body>
+
+<style>
+    img {
+        width: 200px;
+        height: auto;
+    }
+
+    body {
+        background-color: rgb(49, 49, 49);
+        font-family: cursive;
+    }
+
+    a {
+        animation-name: yee;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        font-family: cursive;
+    }
+
+    @keyframes yee {
+        10% {
+            color: red;
+        }
+
+        20% {
+            color: rgb(255, 132, 0);
+        }
+
+        30% {
+            color: yellow;
+        }
+
+        40% {
+            color: rgb(166, 255, 0);
+        }
+
+        50% {
+            color: rgb(0, 255, 153);
+        }
+
+        60% {
+            color: rgb(0, 255, 242);
+        }
+
+        70% {
+            color: blue;
+        }
+
+        80% {
+            color: rgb(119, 0, 255);
+        }
+
+        90% {
+            color: rgb(170, 0, 255);
+        }
+
+        100% {
+            color: rgb(255, 0, 225);
+        }
+    }
+</style>
 
 </html>
