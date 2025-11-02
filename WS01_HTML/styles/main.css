@@ -1,0 +1,70 @@
+img {
+    width: auto;
+    height: 150px;
+}
+
+body {
+    background-color: rgb(73, 90, 96);
+    font-family: Arial, sans-serif;
+}
+
+tr,
+td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style: circle;
+}
+
+a {
+    animation-name: yee;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes yee {
+    10% {
+        color: red;
+    }
+
+    20% {
+        color: rgb(255, 132, 0);
+    }
+
+    30% {
+        color: yellow;
+    }
+
+    40% {
+        color: rgb(166, 255, 0);
+    }
+
+    50% {
+        color: rgb(0, 255, 153);
+    }
+
+    60% {
+        color: rgb(0, 255, 242);
+    }
+
+    70% {
+        color: blue;
+    }
+
+    80% {
+        color: rgb(119, 0, 255);
+    }
+
+    90% {
+        color: rgb(170, 0, 255);
+    }
+
+    100% {
+        color: rgb(255, 0, 225);
+    }
+}

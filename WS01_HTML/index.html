@@ -1,112 +1,52 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="fi">
 
 <head>
-    <title>minun "ensimmäinen" verkkosivuni</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joku sivu</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <h1>Teretulloo</h1>
-    <p>Tämä on peruna.</p>
-    <img src="https://lh6.googleusercontent.com/proxy/IrEfZGRvlh8JjFfij6mkmoYH1yCqoHnkzB92JGuuOQoeycTQtmt8O8QtojLRJgo5gv5DJpOnvEQo1NiK_5meEKOW4IBJik8jnuEGD9VUWkn0elVBtW-1XIhcKgpbYQ"
-        alt="Description of image">
-    <h2 class="card">Ordered List</h2>
+    <p>Tässä on perunoita.</p>
+    <img src="https://www.deliverde.fi/wp-content/uploads/2015/06/perunat-1920x1427.jpg" alt="peruna">
+    <h2>Tässä on järjestetty lista:</h2>
     <ol>
-        <li>First item</li>
-        <li>Second item</li>
-        <li>Third item</li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">Klikkaa
+                tästä</a></li>
+        <li>klikkaa</li>
+        <li>DO IT</li>
     </ol>
-
-    <h2>Unordered List</h2>
+    <h2>Tässä on järjestämätön lista:</h2>
     <ul>
-        <li>First item</li>
-        <li>Second item</li>
-        <li>Third item</li>
+        <li>Eka juttu</li>
+        <li>toka juttu</li>
+        <li>kolmas juttu</li>
     </ul>
     <table>
         <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
+            <th>Kissat</th>
+            <th>Koirat</th>
         </tr>
         <tr>
-            <td>Row 1, Cell 1</td>
-            <td>Row 1, Cell 2</td>
+            <td>On aika siistei</td>
+            <td>Ne on iha ok</td>
         </tr>
         <tr>
-            <td>Row 2, Cell 1</td>
-            <td>Row 2, Cell 2</td>
+            <td>On söpöi</td>
+            <td>Onhan nekin</td>
         </tr>
     </table>
+    <br><br>
     <form>
-        <label for="name">Name:</label>
+        <label for="name">Nimi:</label>
         <input type="text" id="name" name="name"><br><br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <input type="submit" value="Submit">
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Lähetä">
     </form>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">klikkaa jos
-        uskallat</a>
 </body>
-
-<style>
-    img {
-        width: 200px;
-        height: auto;
-    }
-
-    body {
-        background-color: rgb(49, 49, 49);
-        font-family: cursive;
-    }
-
-    a {
-        animation-name: yee;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        font-family: cursive;
-    }
-
-    @keyframes yee {
-        10% {
-            color: red;
-        }
-
-        20% {
-            color: rgb(255, 132, 0);
-        }
-
-        30% {
-            color: yellow;
-        }
-
-        40% {
-            color: rgb(166, 255, 0);
-        }
-
-        50% {
-            color: rgb(0, 255, 153);
-        }
-
-        60% {
-            color: rgb(0, 255, 242);
-        }
-
-        70% {
-            color: blue;
-        }
-
-        80% {
-            color: rgb(119, 0, 255);
-        }
-
-        90% {
-            color: rgb(170, 0, 255);
-        }
-
-        100% {
-            color: rgb(255, 0, 225);
-        }
-    }
-</style>
 
 </html>
