@@ -1,0 +1,200 @@
+ img {
+     width: auto;
+     height: 150px;
+ }
+
+ body {
+     background-color: rgb(73, 90, 96);
+     font-family: Arial, sans-serif;
+ }
+
+ table {
+     width: 30%;
+     border-collapse: collapse;
+ }
+
+ tr,
+ td {
+     border: 2px solid black;
+     padding: 10px;
+     text-align: center;
+     background-color: #32686f;
+ }
+
+ th {
+     border: 3px solid black;
+     background-color: #64fffa;
+ }
+
+ ul {
+     list-style: circle;
+ }
+
+ label {
+     font-weight: bold;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ input[type="text"],
+ input[type="email"] {
+     padding: 8px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+ }
+
+ input[type="submit"] {
+     background-color: #4ca7af;
+     color: white;
+     padding: 10px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ input[type="submit"]:hover {
+     color: rgb(255, 0, 170);
+     animation-name: yee;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     background-color: #32686f;
+ }
+
+ .content-box {
+     width: 250px;
+     padding: 20px;
+     margin: 10px;
+     color: #c7f8ff;
+     background-color: #79a5ca;
+     border: 5px solid #00ffe5;
+     text-align: center;
+ }
+
+ .transition-button {
+     background-color: rgb(75, 210, 255);
+     padding: 10px 20px;
+     border: none;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .transition-button:hover {
+     background-color: rgb(128, 240, 193);
+ }
+
+ .pseudo-list {
+     list-style-type: none;
+     width: 200px;
+     text-align: center;
+ }
+
+ .pseudo-list li:nth-child(odd) {
+     background-color: rgb(28, 138, 137);
+ }
+
+ .pseudo-list li:nth-child(even) {
+     background-color: rgb(0, 255, 217);
+ }
+
+ .filter-image {
+     filter: grayscale(100%);
+     transition: filter 0.3s ease;
+ }
+
+ .filter-image:hover {
+     filter: grayscale(0%);
+ }
+
+ .quote {
+     position: relative;
+     padding-left: 20px;
+     font-style: italic;
+ }
+
+ .quote::before {
+     content: '“';
+     font-size: 40px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     color: lightgray;
+ }
+
+ .quote::after {
+     content: '”';
+     font-size: 40px;
+     position: absolute;
+     right: 1;
+     bottom: 1;
+     color: lightgray;
+ }
+
+ .animation-box {
+     width: 50px;
+     height: 50px;
+     background-color: rgb(43, 145, 162);
+     position: relative;
+     animation: move 2s infinite alternate, yee 4s infinite;
+     text-align: center;
+     font-size: xx-large;
+     line-height: 50px;
+ }
+
+ @keyframes move {
+     from {
+         left: 0;
+     }
+
+     to {
+         left: 405px;
+     }
+ }
+
+ a {
+     color: rgb(255, 0, 170);
+     animation-name: yee;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ @keyframes yee {
+     10% {
+         color: red;
+     }
+
+     20% {
+         color: rgb(255, 132, 0);
+     }
+
+     30% {
+         color: yellow;
+     }
+
+     40% {
+         color: rgb(166, 255, 0);
+     }
+
+     50% {
+         color: rgb(0, 255, 153);
+     }
+
+     60% {
+         color: rgb(0, 255, 242);
+     }
+
+     70% {
+         color: blue;
+     }
+
+     80% {
+         color: rgb(119, 0, 255);
+     }
+
+     90% {
+         color: rgb(170, 0, 255);
+     }
+
+     100% {
+         color: rgb(255, 0, 225);
+     }
+ }
