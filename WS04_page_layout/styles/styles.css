@@ -1,0 +1,297 @@
+ img {
+     width: auto;
+     height: 150px;
+ }
+
+ body {
+     background-color: rgb(73, 90, 96);
+     font-family: Arial, sans-serif;
+ }
+
+ table {
+     width: 30%;
+     border-collapse: collapse;
+ }
+
+ tr,
+ td {
+     border: 2px solid black;
+     padding: 10px;
+     text-align: center;
+     background-color: #32686f;
+ }
+
+ th {
+     border: 3px solid black;
+     background-color: #64fffa;
+ }
+
+ ul {
+     list-style: circle;
+ }
+
+ label {
+     font-weight: bold;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ input[type="text"],
+ input[type="email"] {
+     padding: 8px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+ }
+
+ input[type="submit"] {
+     background-color: #4ca7af;
+     color: white;
+     padding: 10px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ input[type="submit"]:hover {
+     color: rgb(255, 0, 170);
+     animation-name: yee;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+     background-color: #32686f;
+ }
+
+ .content-box {
+     width: 250px;
+     padding: 20px;
+     margin: 10px;
+     color: #c7f8ff;
+     background-color: #79a5ca;
+     border: 5px solid #00ffe5;
+     text-align: center;
+ }
+
+ .transition-button {
+     background-color: rgb(75, 210, 255);
+     padding: 10px 20px;
+     border: none;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .transition-button:hover {
+     background-color: rgb(128, 240, 193);
+ }
+
+ .pseudo-list {
+     list-style-type: none;
+     width: 200px;
+     text-align: center;
+ }
+
+ .pseudo-list li:nth-child(odd) {
+     background-color: rgb(28, 138, 137);
+ }
+
+ .pseudo-list li:nth-child(even) {
+     background-color: rgb(0, 255, 217);
+ }
+
+ .filter-image {
+     filter: grayscale(100%);
+     transition: filter 0.3s ease;
+ }
+
+ .filter-image:hover {
+     filter: grayscale(0%);
+ }
+
+ .quote {
+     position: relative;
+     padding-left: 20px;
+     font-style: italic;
+ }
+
+ .quote::before {
+     content: '“';
+     font-size: 40px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     color: lightgray;
+ }
+
+ .quote::after {
+     content: '”';
+     font-size: 40px;
+     position: absolute;
+     right: 1;
+     bottom: 1;
+     color: lightgray;
+ }
+
+ .animation-box {
+     width: 50px;
+     height: 50px;
+     background-color: rgb(43, 145, 162);
+     position: relative;
+     animation: move 2s infinite, yee 4s infinite;
+     text-align: center;
+     font-size: xx-large;
+     line-height: 50px;
+     margin-bottom: 10px;
+ }
+
+ .flex-container {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .box {
+     background-color: rgb(48, 186, 232);
+     padding: 20px;
+     text-align: center;
+     margin-bottom: 4px;
+     font-family: 'Times New Roman', Times, serif
+ }
+
+ .grid-container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 10px;
+ }
+
+ .grid-item {
+     background-color: rgb(144, 225, 238);
+     padding: 20px;
+     text-align: center;
+ }
+
+ .grid-item:hover {
+     background-color: rgb(255, 0, 170);
+ }
+
+ .responsive-box {
+     padding: 20px;
+     text-align: center;
+     margin-top: 4px;
+ }
+
+ @media (max-width: 600px) {
+     .responsive-box {
+         background-color: rgb(255, 0, 0);
+     }
+ }
+
+ @media (min-width: 601px) {
+     .responsive-box {
+         background-color: rgb(20, 255, 243);
+     }
+ }
+
+ header {
+     background-color: rgb(36, 129, 124);
+     color: white;
+     text-align: center;
+     padding: 10px;
+     margin-bottom: 5px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ footer {
+     background-color: rgb(36, 129, 124);
+     text-align: center;
+     padding: 5px;
+     margin-top: 5px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ nav ul {
+     list-style-type: none;
+     padding: 0px;
+ }
+
+ nav li {
+     margin-top: 5px;
+ }
+
+ @keyframes move {
+     0% {
+         left: 0px;
+         top: 0px;
+         transform: rotate(90deg);
+     }
+
+     25% {
+         left: 300px;
+         top: 0px;
+         transform: rotate(90deg);
+     }
+
+     50% {
+         left: 300px;
+         top: 50px;
+         transform: rotate(270deg);
+     }
+
+     75% {
+         left: 0px;
+         top: 50px;
+         transform: rotate(270deg);
+     }
+
+     100% {
+         left: 0px;
+         top: 0px;
+         transform: rotate(90deg);
+     }
+ }
+
+ a {
+     color: rgb(255, 0, 170);
+     animation-name: yee;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ @keyframes yee {
+     10% {
+         color: red;
+     }
+
+     20% {
+         color: rgb(255, 132, 0);
+     }
+
+     30% {
+         color: yellow;
+     }
+
+     40% {
+         color: rgb(166, 255, 0);
+     }
+
+     50% {
+         color: rgb(0, 255, 153);
+     }
+
+     60% {
+         color: rgb(0, 255, 242);
+     }
+
+     70% {
+         color: blue;
+     }
+
+     80% {
+         color: rgb(119, 0, 255);
+     }
+
+     90% {
+         color: rgb(170, 0, 255);
+     }
+
+     100% {
+         color: rgb(255, 0, 225);
+     }
+ }
