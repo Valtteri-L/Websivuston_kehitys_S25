@@ -1,14 +1,109 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WS05_responsive</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <h1>WS05_responsive</h1>
+    <header>
+        <h1>Verkkosivu</h1>
+        <nav class="responsive-nav">
+            <button class="menu-toggle">☰ Hampurilaisvalikko</button>
+            <ul class="nav-list">
+                <li><a href="#laatikko">Hieno laatikko</a></li>
+                <li><a href="#kumpi">Kissat vai Koirat?</a></li>
+                <li><a href="#loppu">Sivun loppuun</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="color: rgb(179, 255, 0);">Tässä on otsikko</h1>
+        <p>hoveraa noitten pottujen päältä</p>
+        <img src="https://www.deliverde.fi/wp-content/uploads/2015/06/perunat-1920x1427.jpg" alt="peruna"
+            class="filter-image">
+        <h2>Tässä on järjestetty lista:</h2>
+        <ol>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">Klikkaa
+                    tästä</a></li>
+            <li>klikkaa</li>
+            <li>DO IT</li>
+        </ol>
+        <h2>Tässä on järjestämätön lista:</h2>
+        <ul id="kumpi">
+            <li>Eka juttu</li>
+            <li>toka juttu</li>
+            <li>kolmas juttu</li>
+        </ul>
+        <table>
+            <tr>
+                <th>Kissat</th>
+                <th>Koirat</th>
+            </tr>
+            <tr>
+                <td>On aika siistei</td>
+                <td>Ne on iha ok</td>
+            </tr>
+            <tr>
+                <td>On söpöi</td>
+                <td>Onhan nekin</td>
+            </tr>
+        </table>
+        <section id="laatikko">
+            <h2>Hieno laatikko</h2>
+            <p>Tässä se on.</p>
+            <div class="animation-box">:D</div>
+        </section>
+        <br><br>
+        <div class="content-box">
+            <h3>Esimerkki otsikko</h3>
+            <p>Tekstiä div elementissä</p>
+        </div>
+        <button class="transition-button">Nappi</button>
+        <ul class="pseudo-list">
+            <li>Pariton</li>
+            <li>Parillinen</li>
+            <li>Pariton</li>
+            <li>Parillinen</li>
+        </ul>
+        <blockquote class="quote">
+            Jos se toimii, niin silloin siihen ei kosketa.
+        </blockquote>
+        <form>
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Lähetä">
+        </form>
+        <br><br>
+        <div class="flex-container">
+            <div class="box">Rivi I</div>
+            <div class="box">Rivi II</div>
+            <div class="box">Rivi III</div>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+        <div class="responsive-box">Maaginen laatikko, joka vaihtaa väriä näytön koon mukaan</div>
+        <div class="responsive-container">
+            <div class="column">Yhdestä laatikosta</div>
+            <div class="column">tuleekin 2</div>
+        </div>
+        <img src="images/carrot.png" alt="Responsiivinen porkkana" class="responsive-image">
+        <div class="media-query-box">Toinen maaginen laatikko, joka vaihtaa väriä näytön koon mukaan</div>
+    </main>
+    <footer>
+        <p id="loppu">Copyright (mun sivu ei sun) 2025</p>
+    </footer>
 </body>
 
 </html>
