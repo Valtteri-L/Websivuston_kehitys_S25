@@ -1,0 +1,150 @@
+h1 {
+    margin-left: 50px;
+    padding-top: 30px;
+    color: rgb(39, 133, 205);
+}
+
+h2 {
+    color: white;
+}
+
+body {
+    background-color: rgb(29, 48, 55);
+}
+
+header{
+    background-color: rgb(33, 37, 41);
+}
+
+p {
+    font-size: 100px;
+    text-align: center;
+    text-decoration: solid;
+    text-decoration-line: underline;
+    font-family: 'comic sans ms';
+}
+
+#nappi {
+    margin-left: 47%;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid black 2px;
+    background-color: white;
+    cursor: pointer;
+    animation: jiggle 2s infinite, funky 1s infinite alternate;
+}
+
+#nappi:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+#boo {
+    font-family: andale mono, monospace;
+    color: white;
+}
+
+#tausta {
+    width: 320px;
+    height: 180px;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.value {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-right: 25px;
+}
+
+#counter {
+    font-size: 35px;
+    padding: 4px;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    background-color: rgb(27, 26, 26);
+}
+
+#HS {
+    animation: woo 0.4s infinite alternate;
+    font-family: monospace;
+}
+
+#LS {
+    font-family: monospace;
+    animation: juu 0.4s infinite alternate;
+}
+
+#credits,
+#clicks {
+    font-family: monospace;
+}
+
+footer {
+    background-color: rgb(36, 129, 124);
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ----------animaatiot---------- */
+
+@keyframes woo {
+    from {
+        color: rgb(0, 255, 0);
+    }
+
+    to {
+        color: green;
+    }
+}
+
+@keyframes juu {
+    from {
+        color: red;
+    }
+
+    to {
+        color: rgb(156, 7, 7);
+    }
+}
+
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes funky {
+    from {
+        text-shadow: red 2px 2px 2px;
+    }
+
+    to {
+        text-shadow: rgb(1, 255, 1) 2px 2px 2px;
+    }
+}
