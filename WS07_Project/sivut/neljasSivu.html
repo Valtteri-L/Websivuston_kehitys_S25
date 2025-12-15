@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pankkitili simulator</title>
+    <title>WS07-Pankkitili Simulator</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css" type="text/css">
@@ -12,49 +13,83 @@
 
 <body>
     <header>
-        <h1>Verkkosivu</h1>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Etusivu</a>
+            <div class="container-fluid" style="margin-left: 50px;">
+                <div>
+                    <h1><a class="logo" href="index.html">WS07-Project.com</a></h1>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../sivut/toinenSivu.html">toka sivu</a>
+                            <a class="nav-link" href="../sivut/toinenSivu.html" style="color: white;">Sekiro: Shadows
+                                Die Twice</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../sivut/kolmasSivu.html">kolmas sivu</a>
+                            <a class="nav-link" href="../sivut/kolmasSivu.html" style="color: white;">Mun review</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="../sivut/neljasSivu.html">Pankkitili simulator</a>
+                            <a class="nav-link active" aria-current="page" href="../sivut/neljasSivu.html"
+                                style="color: rgb(5, 32, 48);">Pankkitili
+                                Simulator</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-    <main>
-        <P id="boo">Pankkitili Simulator</P>
-        <button id="nappi" onclick="Rahasimulaattori(), clickCounter()">START</button>
-        <div id="tausta">
-            <p class="value" id="wow"></p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-12" id="counter">Saldo: <a id="credits">0</a></div>
-                <div class="col-md-4 col-12" id="counter">Clicks: <a id="clicks">0</a></div>
-                <div class="col-md-4 col-12" id="counter">High Score: <a id="HS">0</a></div>
-                <div class="col-md-4 col-12" id="counter">Low Score: <a id="LS">0</a></div>
+    <main class="container hero">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+            style="background-color: rgb(52, 59, 63); margin: 20px;">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h2 id="boo">Pankkitili Simulator</h2>
+                <div class="alusta">
+                    <button class="btn btn-outline-light" id="nappi"
+                        onclick="Rahasimulaattori(), clickCounter()">START</button>
+                    <div class="container-fluid" style="margin: 5px;">
+                        <div class="img-fluid" id="tausta">
+                            <p class="value" id="wow"></p>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <p class="counter">Saldo: <a id="credits">0</a></p>
+                            </div>
+                            <div class="col">
+                                <p class="counter">Clicks: <a id="clicks">0</a></p>
+                            </div>
+                            <div class="col">
+                                <p class="counter">High Score: <a id="HS">0</a></p>
+                            </div>
+                            <div class="col">
+                                <p class="counter">Low Score: <a id="LS">0</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p><small>Sivulla on ääniefekti.</small></p>
+            </div>
+            <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+                <img src="../images/rules.png" class="card-img-top" alt="aiheeseen liittymätön kuva"
+                    style="padding-top: 10px;">
+                <div class="card-body">
+                    <h5 class="card-title">Lue tarkkaan</h5>
+                    <p class="card-text" style="color: rgb(5, 35, 53);">Klikkaamalla "START" nappia arvot itsellesi
+                        numeron <b class="red">-1000</b> ja <b class="green">+1000</b> väliltä. Koita saada saldo
+                        mahdollissimman korkealle (niiku oikeassa elämässä). Jotain saattaa tapahtua jos saldo
+                        tippuu <b class="red">-1000</b> tai alemmaksi...
+                    </p>
+                </div>
             </div>
         </div>
     </main>
     <footer>
         <div>
-            <small>Copyright 2025 - Valtteri Lipponen. Mun sivu, ei sun.</small>
+            <small>© 2025 - Valtteri Lipponen. Mun sivu, ei sun.</small>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
